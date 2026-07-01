@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Layout from './Layout';
+import { getAllAccounts } from './Account';
 
 class Home extends Component{
     constructor(props){
@@ -32,9 +33,16 @@ class Home extends Component{
     }
 
     checkValidForm = () => {
-        const { email, password } = this.state.form
-        const value = email && password
-        this.setState({ isValid: value})
+        // const { email, password } = this.state.form
+        // const value = email && password
+        // this.setState({ isValid: value})
+        const accounts = getAllAccounts();
+        const { email, password } = this.state.form;
+        const isValid = accounts.filter(acc => 
+            acc.email == email && 
+            acc.password == password
+        ).length == 1
+        this.setState({ isValid });
     }
 
     handleSubmit = () => {
