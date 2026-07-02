@@ -19,8 +19,7 @@ function AddPlayers({ refresh }){
     const handleAdd = () => {
         const added = addPlayer(formData);
 
-        if (added) {
-            console.log(`Player ${formData.name} added.`)
+        if (added){
             refresh();
         }
     }
