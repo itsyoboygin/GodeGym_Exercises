@@ -1,17 +1,12 @@
-import { useState } from 'react'
 import './App.css'
-import { Counter1 } from './counters/Counter1';
-import { Counter2 } from './counters/Counter2';
-
+import Counter1 from './components/Counter1';
+import Counter2 from './components/Counter2';
 
 function App() {
   return (
     <>
-      <p>Count: </p>
-      <Counter1/>
-
-      <p>Count: </p>
-      <Counter2/>
+      <Counter1 />
+      <Counter2 />
     </>
   )
 }
