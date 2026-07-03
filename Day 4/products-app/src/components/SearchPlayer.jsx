@@ -16,7 +16,7 @@ function SearchPlayers({ onSearch }){
         <>
             <form onSubmit={handleSubmit}>
                 <input type="name" name="name" value={player} onChange={handleChange} placeholder="Search by name"></input>
-                <button type="submit">Search</button>
+                <button type="submit" className="btn-secondary">Search</button>
             </form>
         </>
     )

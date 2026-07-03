@@ -9,7 +9,7 @@ function DeletePlayers({ player, refresh }){
 
     return (
         <>
-            <button onClick={handleDelete}>Delete</button>
+            <button onClick={handleDelete} className="btn-danger">Delete</button>
         </>
     );
 }

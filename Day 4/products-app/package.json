@@ -10,10 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "formik": "^2.4.9",
     "install": "^0.13.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
-    "react-toastify": "^11.1.0"
+    "react-router-dom": "^7.18.1",
+    "react-toastify": "^11.1.0",
+    "yup": "^1.7.1"
   },
   "devDependencies": {
     "@types/react": "^19.2.17",

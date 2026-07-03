@@ -35,7 +35,7 @@ function AddPlayers({ refresh }){
                 <form onSubmit={handleSubmit}>
                     <input type="name" name="name" placeholder="Name" onChange={handleChange} value={formData.name}/><br/>
                     <input type="price" name="price" placeholder="Price" onChange={handleChange} value={formData.price}/><br/>
-                    <button type="submit">Add</button>
+                    <button type="submit" className="btn-primary">Add</button>
                 </form>
             </div>
         </>
