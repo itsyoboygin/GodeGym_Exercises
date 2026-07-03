@@ -2,32 +2,32 @@ const players = [
     {
         id: 1,
         name: 'Lamine Yamal',
-        price: '$200,000,000'
+        price: 200000000
     },
     {
         id: 2,
         name: 'Michael Olise',
-        price: '$120,000,000'
+        price: 120000000
     },
     {
         id: 3,
         name: 'Pedri',
-        price: '$130,000,000'
+        price: 130000000
     },
     {
         id: 4,
         name: 'Ousmane Demebele',
-        price: '$150,000,000'
+        price: 150000000
     },
     {
         id: 5,
         name: 'Lionel Messi',
-        price: '$80,000,000'
+        price: 80000000
     },
     {
         id: 6,
         name: 'Rafael Leao',
-        price: '$70,000,000'
+        price: 70000000
     }
 ]
 
