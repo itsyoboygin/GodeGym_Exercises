@@ -18,13 +18,16 @@ function Add({ onAdd }) {
             <Formik
                 initialValues={{ name: '', price: '' }}
                 validationSchema={AddSchema}
-                onSubmit={(values, { resetForm }) => {
-                    if (addPlayer(values)) {
+                onSubmit={async (values, { resetForm }) => {
+                    const success = await addPlayer(values);
+                    if (success) {
                         toast.success(`Player ${values.name} added successfully!`);
                         resetForm();
                         if (onAdd) {
                             onAdd();
                         }
+                    } else {
+                        toast.error('Failed to add player.');
                     }
                 }}
             >

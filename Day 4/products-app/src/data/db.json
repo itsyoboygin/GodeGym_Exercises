@@ -1,0 +1,25 @@
+{
+  "players": [
+    {
+      "id": "KHhD4PuOaIo",
+      "name": "Pedri",
+      "price": 150000000
+    },
+    {
+      "id": "us2O2QLL8gc",
+      "name": "Doue",
+      "price": 150000000
+    },
+    {
+      "id": "wmVWBMXbIOo",
+      "name": "Barcola",
+      "price": 100000000
+    },
+    {
+      "id": "2iJIYP8LU48",
+      "name": "Yamal",
+      "price": 200000000
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

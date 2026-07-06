@@ -16,7 +16,7 @@ function List({ players = [], refresh }) {
                     {players.length > 0 ? (
                         players.map((player) => (
                             <tr key={player.id}>
-                                <td>{player.id}</td>
+                                <td>{player.displayId ?? player.id}</td>
                                 <td>{player.name}</td>
                                 <td>{player.price}</td>
                                 <td>

@@ -6,14 +6,16 @@ function SearchPlayers() {
     const [results, setResults] = useState([]);
     const [showResults, setShowResults] = useState(false);
 
-    const handleSearch = (query) => {
+    const handleSearch = async (query) => {
         const trimmed = query.trim();
         setShowResults(Boolean(trimmed));
-        setResults(trimmed ? searchPlayer(trimmed) : []);
+        const results = trimmed ? await searchPlayer(trimmed) : [];
+        setResults(results);
     };
 
-    const refresh = () => {
-        setResults(getAllPlayers());
+    const refresh = async () => {
+        const res = await getAllPlayers();
+        setResults(res);
         setShowResults(true);
     };
 

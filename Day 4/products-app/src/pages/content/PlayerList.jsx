@@ -7,7 +7,11 @@ function PlayersList() {
     const [reload, setReload] = useState(false);
 
     useEffect(() => {
-        setPlayers(getAllPlayers());
+        const fetchData = async () => {
+            const res = await getAllPlayers();
+            setPlayers(res);
+        }
+        fetchData();
     }, [reload]);
 
     const refresh = () => {
